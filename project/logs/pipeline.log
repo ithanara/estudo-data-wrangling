@@ -1,0 +1,34 @@
+2026-02-23 18:12:50,788 - INFO - Starting temporary server on http://127.0.0.1:8447
+See https://docs.prefect.io/v3/concepts/server#how-to-guides for more information on running a dedicated Prefect server.
+2026-02-23 18:12:53,023 - INFO - HTTP Request: GET http://127.0.0.1:8447/api/health "HTTP/1.1 200 OK"
+2026-02-23 18:12:53,041 - INFO - HTTP Request: GET http://127.0.0.1:8447/api/admin/version "HTTP/1.1 200 OK"
+2026-02-23 18:12:53,045 - INFO - HTTP Request: GET http://127.0.0.1:8447/api/csrf-token?client=fcf82efb-e4b4-42d1-8b45-9745c6e96e9d "HTTP/1.1 422 Unprocessable Content"
+2026-02-23 18:12:53,050 - INFO - HTTP Request: POST http://127.0.0.1:8447/api/flows/ "HTTP/1.1 200 OK"
+2026-02-23 18:12:53,064 - INFO - HTTP Request: POST http://127.0.0.1:8447/api/flow_runs/ "HTTP/1.1 201 Created"
+2026-02-23 18:12:53,079 - INFO - HTTP Request: POST http://127.0.0.1:8447/api/flow_runs/2bda0d16-7e67-4eda-96b6-0ec7d2a0bba7/set_state "HTTP/1.1 201 Created"
+2026-02-23 18:12:53,083 - INFO - HTTP Request: GET http://127.0.0.1:8447/api/flow_runs/2bda0d16-7e67-4eda-96b6-0ec7d2a0bba7 "HTTP/1.1 200 OK"
+2026-02-23 18:12:53,085 - INFO - Beginning flow run 'dashing-mayfly' for flow 'estudo-prefect'
+2026-02-23 18:12:53,103 - INFO - Iniciando extração...
+2026-02-23 18:12:53,103 - INFO - Extração do arquivo /Users/thai/Documents/WoMakers/Trabalhos/TCC/Estudos/project/data/netflix_titles.csv iniciada.
+2026-02-23 18:12:53,139 - INFO - Arquivo carregado com sucesso. Linhas: 8807
+2026-02-23 18:12:53,140 - INFO - Arquivo carregado com sucesso. Linhas: 8807
+2026-02-23 18:12:53,141 - INFO - Finished in state Completed()
+2026-02-23 18:12:53,152 - INFO - Iniciando transformação...
+2026-02-23 18:12:53,153 - INFO - Transformação do dataframe iniciada.
+2026-02-23 18:12:53,156 - INFO - Valores nulos: 4307
+2026-02-23 18:12:53,157 - INFO - Coluna description removida
+2026-02-23 18:12:53,157 - INFO - HTTP Request: GET http://127.0.0.1:8447/api/flows/895be61e-32e2-4225-92cc-39294b206493 "HTTP/1.1 200 OK"
+2026-02-23 18:12:53,159 - INFO - Colunas padronizadas e nulos preenchidos
+2026-02-23 18:12:53,166 - INFO - Transformação concluída! Valores nulos agora: 17
+2026-02-23 18:12:53,166 - INFO - Transformação concluída!
+2026-02-23 18:12:53,167 - INFO - Finished in state Completed()
+2026-02-23 18:12:53,175 - INFO - Salvando do dataframe...
+2026-02-23 18:12:53,175 - INFO - Salvando do dataframe em /Users/thai/Documents/WoMakers/Trabalhos/TCC/Estudos/project/data/df_limpo.csv
+2026-02-23 18:12:53,209 - INFO - Arquivo salvo com sucesso!
+2026-02-23 18:12:53,209 - INFO - Arquivo salvo com sucesso!
+2026-02-23 18:12:53,209 - INFO - Finished in state Completed()
+2026-02-23 18:12:53,218 - INFO - HTTP Request: POST http://127.0.0.1:8447/api/flow_runs/2bda0d16-7e67-4eda-96b6-0ec7d2a0bba7/set_state "HTTP/1.1 201 Created"
+2026-02-23 18:12:53,219 - INFO - Finished in state Completed()
+2026-02-23 18:12:53,222 - INFO - HTTP Request: GET http://127.0.0.1:8447/api/csrf-token?client=66ec7821-05cb-4bde-920f-b38f82ed2e1f "HTTP/1.1 422 Unprocessable Content"
+2026-02-23 18:12:53,225 - INFO - HTTP Request: POST http://127.0.0.1:8447/api/logs/ "HTTP/1.1 201 Created"
+2026-02-23 18:12:53,226 - INFO - Stopping temporary server on http://127.0.0.1:8447
