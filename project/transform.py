@@ -1,5 +1,4 @@
 import pandas as pd
-import logging
 
 def padronizar_colunas(df):
   df = df.rename(columns={
@@ -33,25 +32,14 @@ def tratar_datas(df):
   return df
 
 def transform(df):
-  logging.info(f'Transformação do dataframe iniciada.')
-  try:
-    pre_transform = df.isnull().sum().sum()
-    logging.info(f"Valores nulos: {pre_transform}")
+  #pre_transform = df.isnull().sum().sum()
 
-    df = df.drop(columns=['description'])
-    logging.info("Coluna description removida")
+  df = df.drop(columns=['description'])
 
-    df = padronizar_colunas(df)
-    df = preencher_nulos(df)
-    logging.info("Colunas padronizadas e nulos preenchidos")
+  df = padronizar_colunas(df)
+  df = preencher_nulos(df)
 
-    df = limpar_strings(df)
-    df = tratar_datas(df)
-    pos_transform = df.isnull().sum().sum()
-
-    logging.info(f"Transformação concluída! Valores nulos agora: {pos_transform}")
-    return df
-  
-  except Exception as e:
-    logging.error(f'Algo deu errado: {e}')
-    raise
+  df = limpar_strings(df)
+  df = tratar_datas(df)
+  #pos_transform = df.isnull().sum().sum()
+  return df

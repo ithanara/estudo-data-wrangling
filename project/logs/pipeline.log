@@ -1,34 +1,34 @@
-2026-02-23 18:12:50,788 - INFO - Starting temporary server on http://127.0.0.1:8447
+2026-02-23 18:27:42,518 - INFO - Starting temporary server on http://127.0.0.1:8902
 See https://docs.prefect.io/v3/concepts/server#how-to-guides for more information on running a dedicated Prefect server.
-2026-02-23 18:12:53,023 - INFO - HTTP Request: GET http://127.0.0.1:8447/api/health "HTTP/1.1 200 OK"
-2026-02-23 18:12:53,041 - INFO - HTTP Request: GET http://127.0.0.1:8447/api/admin/version "HTTP/1.1 200 OK"
-2026-02-23 18:12:53,045 - INFO - HTTP Request: GET http://127.0.0.1:8447/api/csrf-token?client=fcf82efb-e4b4-42d1-8b45-9745c6e96e9d "HTTP/1.1 422 Unprocessable Content"
-2026-02-23 18:12:53,050 - INFO - HTTP Request: POST http://127.0.0.1:8447/api/flows/ "HTTP/1.1 200 OK"
-2026-02-23 18:12:53,064 - INFO - HTTP Request: POST http://127.0.0.1:8447/api/flow_runs/ "HTTP/1.1 201 Created"
-2026-02-23 18:12:53,079 - INFO - HTTP Request: POST http://127.0.0.1:8447/api/flow_runs/2bda0d16-7e67-4eda-96b6-0ec7d2a0bba7/set_state "HTTP/1.1 201 Created"
-2026-02-23 18:12:53,083 - INFO - HTTP Request: GET http://127.0.0.1:8447/api/flow_runs/2bda0d16-7e67-4eda-96b6-0ec7d2a0bba7 "HTTP/1.1 200 OK"
-2026-02-23 18:12:53,085 - INFO - Beginning flow run 'dashing-mayfly' for flow 'estudo-prefect'
-2026-02-23 18:12:53,103 - INFO - Iniciando extração...
-2026-02-23 18:12:53,103 - INFO - Extração do arquivo /Users/thai/Documents/WoMakers/Trabalhos/TCC/Estudos/project/data/netflix_titles.csv iniciada.
-2026-02-23 18:12:53,139 - INFO - Arquivo carregado com sucesso. Linhas: 8807
-2026-02-23 18:12:53,140 - INFO - Arquivo carregado com sucesso. Linhas: 8807
-2026-02-23 18:12:53,141 - INFO - Finished in state Completed()
-2026-02-23 18:12:53,152 - INFO - Iniciando transformação...
-2026-02-23 18:12:53,153 - INFO - Transformação do dataframe iniciada.
-2026-02-23 18:12:53,156 - INFO - Valores nulos: 4307
-2026-02-23 18:12:53,157 - INFO - Coluna description removida
-2026-02-23 18:12:53,157 - INFO - HTTP Request: GET http://127.0.0.1:8447/api/flows/895be61e-32e2-4225-92cc-39294b206493 "HTTP/1.1 200 OK"
-2026-02-23 18:12:53,159 - INFO - Colunas padronizadas e nulos preenchidos
-2026-02-23 18:12:53,166 - INFO - Transformação concluída! Valores nulos agora: 17
-2026-02-23 18:12:53,166 - INFO - Transformação concluída!
-2026-02-23 18:12:53,167 - INFO - Finished in state Completed()
-2026-02-23 18:12:53,175 - INFO - Salvando do dataframe...
-2026-02-23 18:12:53,175 - INFO - Salvando do dataframe em /Users/thai/Documents/WoMakers/Trabalhos/TCC/Estudos/project/data/df_limpo.csv
-2026-02-23 18:12:53,209 - INFO - Arquivo salvo com sucesso!
-2026-02-23 18:12:53,209 - INFO - Arquivo salvo com sucesso!
-2026-02-23 18:12:53,209 - INFO - Finished in state Completed()
-2026-02-23 18:12:53,218 - INFO - HTTP Request: POST http://127.0.0.1:8447/api/flow_runs/2bda0d16-7e67-4eda-96b6-0ec7d2a0bba7/set_state "HTTP/1.1 201 Created"
-2026-02-23 18:12:53,219 - INFO - Finished in state Completed()
-2026-02-23 18:12:53,222 - INFO - HTTP Request: GET http://127.0.0.1:8447/api/csrf-token?client=66ec7821-05cb-4bde-920f-b38f82ed2e1f "HTTP/1.1 422 Unprocessable Content"
-2026-02-23 18:12:53,225 - INFO - HTTP Request: POST http://127.0.0.1:8447/api/logs/ "HTTP/1.1 201 Created"
-2026-02-23 18:12:53,226 - INFO - Stopping temporary server on http://127.0.0.1:8447
+2026-02-23 18:27:44,624 - INFO - HTTP Request: GET http://127.0.0.1:8902/api/health "HTTP/1.1 200 OK"
+2026-02-23 18:27:44,644 - INFO - HTTP Request: GET http://127.0.0.1:8902/api/admin/version "HTTP/1.1 200 OK"
+2026-02-23 18:27:44,649 - INFO - HTTP Request: GET http://127.0.0.1:8902/api/csrf-token?client=ec9c3cb6-36b0-4189-ad47-3b0d750e2be6 "HTTP/1.1 422 Unprocessable Content"
+2026-02-23 18:27:44,654 - INFO - HTTP Request: POST http://127.0.0.1:8902/api/flows/ "HTTP/1.1 200 OK"
+2026-02-23 18:27:44,672 - INFO - HTTP Request: POST http://127.0.0.1:8902/api/flow_runs/ "HTTP/1.1 201 Created"
+2026-02-23 18:27:44,686 - INFO - HTTP Request: POST http://127.0.0.1:8902/api/flow_runs/a2800c4a-091b-4663-9307-4928764d7203/set_state "HTTP/1.1 201 Created"
+2026-02-23 18:27:44,690 - INFO - HTTP Request: GET http://127.0.0.1:8902/api/flow_runs/a2800c4a-091b-4663-9307-4928764d7203 "HTTP/1.1 200 OK"
+2026-02-23 18:27:44,691 - INFO - Beginning flow run 'jumping-centipede' for flow 'estudo-prefect'
+2026-02-23 18:27:44,713 - INFO - Iniciando extração...
+2026-02-23 18:27:44,713 - INFO - Extração do arquivo /Users/thai/Documents/WoMakers/Trabalhos/TCC/estudo-data-wrangling/project/data/netflix_titles.csv iniciada.
+2026-02-23 18:27:44,753 - INFO - Arquivo carregado com sucesso. Linhas: 8807
+2026-02-23 18:27:44,753 - INFO - Arquivo carregado com sucesso. Linhas: 8807
+2026-02-23 18:27:44,754 - INFO - Finished in state Completed()
+2026-02-23 18:27:44,771 - INFO - Iniciando transformação...
+2026-02-23 18:27:44,771 - INFO - Transformação do dataframe iniciada.
+2026-02-23 18:27:44,774 - INFO - Valores nulos: 4307
+2026-02-23 18:27:44,775 - INFO - Coluna description removida
+2026-02-23 18:27:44,778 - INFO - Colunas padronizadas e nulos preenchidos
+2026-02-23 18:27:44,787 - INFO - HTTP Request: GET http://127.0.0.1:8902/api/flows/895be61e-32e2-4225-92cc-39294b206493 "HTTP/1.1 200 OK"
+2026-02-23 18:27:44,787 - INFO - Transformação concluída! Valores nulos agora: 17
+2026-02-23 18:27:44,787 - INFO - Transformação concluída!
+2026-02-23 18:27:44,788 - INFO - Finished in state Completed()
+2026-02-23 18:27:44,797 - INFO - Salvando do dataframe...
+2026-02-23 18:27:44,797 - INFO - Salvando do dataframe em /Users/thai/Documents/WoMakers/Trabalhos/TCC/estudo-data-wrangling/project/data/df_limpo.csv
+2026-02-23 18:27:44,835 - INFO - Arquivo salvo com sucesso!
+2026-02-23 18:27:44,835 - INFO - Arquivo salvo com sucesso!
+2026-02-23 18:27:44,836 - INFO - Finished in state Completed()
+2026-02-23 18:27:44,847 - INFO - HTTP Request: POST http://127.0.0.1:8902/api/flow_runs/a2800c4a-091b-4663-9307-4928764d7203/set_state "HTTP/1.1 201 Created"
+2026-02-23 18:27:44,848 - INFO - Finished in state Completed()
+2026-02-23 18:27:44,851 - INFO - HTTP Request: GET http://127.0.0.1:8902/api/csrf-token?client=d266c77f-5134-4dd9-976b-b2fd732797f1 "HTTP/1.1 422 Unprocessable Content"
+2026-02-23 18:27:44,856 - INFO - HTTP Request: POST http://127.0.0.1:8902/api/logs/ "HTTP/1.1 201 Created"
+2026-02-23 18:27:44,857 - INFO - Stopping temporary server on http://127.0.0.1:8902

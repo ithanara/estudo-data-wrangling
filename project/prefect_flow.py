@@ -22,7 +22,7 @@ def transform_task(df):
 @task
 def load_task(df):
     logger = get_run_logger()
-    logger.info(f'Salvando do dataframe...')
+    logger.info(f'Salvando dataframe...')
     load(df, OUTPUT_PATH)
     logger.info(f"Arquivo salvo com sucesso!")
 
