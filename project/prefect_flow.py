@@ -31,9 +31,7 @@ def transform_task(df):
     #Alerta muitos nulos:
     percentual_nulos = (nulos_final / total_campos) * 100
     if percentual_nulos > 10:
-        logger.warning(
-            f"Alto volume de valores nulos: {percentual_nulos:.2f}% do dataset."
-        )
+        logger.warning(f"Alto volume de valores nulos: {percentual_nulos:.2f}% do dataset.")
     return df
 
 @task
