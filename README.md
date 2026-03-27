@@ -179,6 +179,33 @@ Isso simula uma prática comum em pipelines reais de dados: **data quality check
 
 ## ▶️ Como Executar o Projeto
 
+### 0. Pré-requisitos
+
+Para executar este projeto localmente, é necessário ter instalado:
+
+- Python 3.10 ou superior
+- pip (gerenciador de pacotes do Python)
+- Ambiente virtual (recomendado)
+
+#### Verificando se o Python está instalado:
+
+No terminal, execute:
+
+```
+python --version
+```
+
+ou
+
+```
+python3 --version
+```
+
+Se o Python não estiver instalado, faça o download no site oficial:
+https://www.python.org/downloads/
+
+---
+
 ### 1. Instalar dependências
 
 ```
